@@ -1,14 +1,16 @@
-@import '_reset';
 
-$myColor: #00B7FF;
+@import 'reset';
+
+$myColor: indianred;
 
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: $myColor;
 }
 
 a {
-  color: #00B7FF;
+  color: $myColor;
 }
 
 @mixin border-radius($radius) {
@@ -18,6 +20,7 @@ a {
           border-radius: $radius;
 }
 
-.box { @include border-radius(11px);
+.box {
+  @include border-radius(11px);
   background-color: blue;
 }
